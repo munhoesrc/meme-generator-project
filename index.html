@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Meme Generator</title>
+  <link rel="stylesheet" href="teste.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Quicksand:wght@700&display=swap');
+  </style>
+
+<body>
+  <header>
+    <h1>Gerador de Meme</h1>
+  </header>
+  <main>
+    <section class="meme-settings">
+      <label for="text-input"></label>
+      <input type="text" name="text-input" id="text-input" placeholder="Digite seu texto" maxlength="30" />
+      <label for="meme-insert" class="meme-insert">Enviar Arquivo</label>
+      <input type="file" name="meme-picture-insert" id="meme-insert" />
+    </section>
+    <section id="meme-image-container" class="preview-meme">
+      <p id="meme-text"></p>
+      <img src="./imgs/your-image-here.jpg" alt="imagem do meme" id="meme-image" />
+    </section>
+    <section class="btns-borders-controls">
+      <h2>Customizações de borda: </h2>
+      <button id="fire" class="btns-borders">Vermelho</button>
+      <button id="water" class="btns-borders">Azul</button>
+      <button id="earth" class="btns-borders">Verde</button>
+    </section>
+    <section class="layout-memes">
+      <h2>Memes carregados: </h2>
+      <div class="preview-premade">
+        <img src="./imgs/meme4.png" alt="menino pensando" id="meme-1" />
+      </div>
+      <div class="preview-premade">
+        <img src="./imgs/meme1.png" alt="code" id="meme-2" />
+      </div>
+      <div class="preview-premade">
+        <img src="./imgs/meme2.png" alt="vomitando" id="meme-3" />
+      </div>
+      <div class="preview-premade">
+        <img src="./imgs/meme3.png" alt="desespero" id="meme-4" />
+      </div>
+    </section>
+  </main>
+  <footer class="rodape">
+    Desenvolvido por Renan Casarin Munhoes© - 2022
+  </footer>
+  <script src="teste.js"></script>
+</body>
+
+</html>
